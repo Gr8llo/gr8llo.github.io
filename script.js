@@ -1,5 +1,5 @@
-//window.addEventListener("load", loader);
-const loading_wait = 10000;
+window.addEventListener("load", loader);
+const loading_wait = 4000;
 
 window.addEventListener("scroll", overlap);
 
@@ -8,7 +8,7 @@ setTimeout(() => document.getElementById("swipe").style.opacity = "1", loading_w
 function loader(){
     setTimeout(()=> {
         document.getElementById("loader").style.display = "none";
-        document.getElementById("main").style.visibility = "visible";
+        document.getElementById("main").style.opacity = "1";
     }, loading_wait);
 }
 
