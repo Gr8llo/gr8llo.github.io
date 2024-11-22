@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+
+:root{
+    --background-color: #f25f9a;
+    --background-secondary-color: #da2861;
+    --font-color: #fbcfe3; 
+    --font-secondary-color: #9d173d; 
+    scrollbar-width: none;
+   -ms-overflow-style: none;
+   user-select: none;
+}
+
+:root::-webkit-scrollbar { /* root = html(tag) */
+    display: none;
+}
+
+body, html{
+    background-color: var(--background-color);
+    padding: 0rem;
+    margin: 0rem;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader{
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.loader img{
+    position: absolute;
+    width: 20vh;
+    height: auto;
+    mask-image: linear-gradient(135deg, rgba(0, 0, 0, 0.7) 30%, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7) 70%);
+    mask-position: 100% 100%; 
+    mask-size: 200% 200%; 
+    background-repeat: no-repeat;
+    animation: shining 3s linear 0.2s infinite;
+}
+
+
+@keyframes shining {
+    from {
+        
+      }
+      to {
+        mask-position: 0% 0%;
+      }
+}
+
+.main{
+    padding: 0rem;
+    margin: 0rem;
+    height: 100%;
+    width: 100%;
+    display: felx;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+}
+/* vh=viewport-heigth   vw=viewport-width*/
+.welcome{
+    position: fixed;
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: radial-gradient(circle, var(--background-secondary-color), var(--background-color), var(--background-color));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+}
+
+.welcome img{
+    position: fixed;
+    width: min(50vw, 40vh);
+    height: auto;
+    filter:drop-shadow(0px 0px 30px var(--background-color)); 
+}
+
+.welcome svg{
+    position: fixed;
+    width: min(200vw, 150vh);
+    height: auto;
+}
+
+.abstract-form{
+    fill: var(--background-secondary-color);
+}
+
+.swipe{
+    position: absolute;
+    text-align: center;
+    margin-top: 96vh;
+    font-family: 'Great Vibes', Fantasy;
+    color: var(--font-color);
+    font-size: min(6vh, 8vw);
+    animation: bouncing 1s ease 4s infinite alternate;
+    transition: opacity 2s ease;
+    opacity: 0;
+}
+
+@keyframes bouncing {
+    from{
+        transform: translateY(0);
+        text-shadow: 1px 1px 5px var(--font-color);
+    }
+    to{
+        transform: translateY(-1vh);
+        text-shadow: 1px 1px 5px var(--font-secondary-color);
+    }
+}
+
+.queenGreetings{
+    position: sticky;
+    background-image: radial-gradient(var(--background-secondary-color),var(--background-color));
+    width: 100vw;
+    height: 100%;
+    margin-top:100vh ;
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;   
+    overflow: hidden;  
+    position: relative;
+}
+
+.queenGreetings h1, span{
+    font-family: 'Great Vibes', Fantasy;
+    color: var(--font-color);
+    font-size: min(20vh, 25vw);
+    text-shadow: 4px 4px 0px var(--font-secondary-color);
+    text-wrap: pretty;
+    width: 100%;
+}
