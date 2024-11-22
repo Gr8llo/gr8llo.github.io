@@ -36,6 +36,8 @@ html {
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  opacity: 1;
+  transition: opacity 0.5s ease;
 }
 
 .loaderFront {
@@ -57,6 +59,14 @@ html {
   height: auto;
   z-index: 1;
   animation: bounce 2s ease infinite;
+}
+.loader p{
+    position: absolute;
+    top:57%;
+    font-family: "Great Vibes", Fantasy;
+    color: var(--font-color);
+    font-size: min(6vh, 8vw);
+    text-shadow: 5px 5px 5px var(--font-secondary-color);
 }
 
 @keyframes shining {

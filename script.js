@@ -7,7 +7,7 @@ setTimeout(() => document.getElementById("swipe").style.opacity = "1", loading_w
 
 function loader(){
     setTimeout(()=> {
-        document.getElementById("loader").style.display = "none";
+        document.getElementById("loader").style.opacity = "0";
         document.getElementById("main").style.opacity = "1";
     }, loading_wait);
 }
