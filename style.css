@@ -66,7 +66,7 @@ html {
 
 .loader p{
     position: absolute;
-    top:57%;
+    top:53%;
     font-family: "Great Vibes", Fantasy;
     color: var(--font-color);
     font-size: min(6vh, 8vw);
