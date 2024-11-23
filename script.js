@@ -19,6 +19,14 @@ function overlap(){
 
     document.getElementById("welcome").style.opacity = (1-scrollY/max);
     document.getElementById("queenGreetings").style.opacity = (scrollY/max);
+    const audio = document.getElementById("audio");
+    if(scrollY>= max - 10){
+        document.getElementById("queenGreetings").style.opacity = 1;
+       audio.play();
+    } 
+    else{
+        audio.pause();
+    }
 }
 
 
