@@ -29,15 +29,18 @@ html {
 }
 
 .loader {
-  width: 100vw;
-  height: 100vh;
-  position: absolute;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
   opacity: 1;
   transition: opacity 0.5s ease;
+
 }
 
 .loaderFront {
@@ -60,6 +63,7 @@ html {
   z-index: 1;
   animation: bounce 2s ease infinite;
 }
+
 .loader p{
     position: absolute;
     top:57%;
@@ -105,8 +109,8 @@ html {
   position: fixed;
   padding: 0;
   margin: 0;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   background-image: radial-gradient(
     circle,
     var(--background-secondary-color),
@@ -160,9 +164,8 @@ html {
 }
 
 .queenGreetings {
-  position: sticky;
   background-image: radial-gradient(var(--background-secondary-color), var(--background-color));
-  width: 100vw;
+  width: 100%;
   height: 100%;
   margin-top: 100vh;
   display: flex;
@@ -178,8 +181,33 @@ html {
 .queenGreetings h1, span {
   font-family: "Great Vibes", Fantasy;
   color: var(--font-color);
-  font-size: min(30vh, 25vw);
+  font-size: min(22.5vh, 15vw);
   text-shadow: 4px 4px 0px var(--font-secondary-color);
   text-wrap: pretty;
   width: 100%;
+}
+
+.queenGreetings span{
+  font-size: min(30vh, 20vw);;
+}
+
+.queenGreetings sup{
+  font-size: min(15vh, 10vw);
+  padding-left: 0.5rem;
+}
+
+
+@media (max-width: 480px) {
+  .queenGreetings h1 {
+    font-size: 20vw;
+  }
+  
+  .queenGreetings span{
+    font-size: 25vw;
+  }
+  
+  .queenGreetings sup{
+    font-size: 12vw;
+    padding-left: 0.5rem;
+  }
 }
