@@ -18,8 +18,8 @@
 body,
 html {
   background-color: var(--background-color);
-  padding: 0rem;
-  margin: 0rem;
+  padding: 0;
+  margin: 0;
   height: 100%;
   width: 100%;
   display: flex;
@@ -28,20 +28,22 @@ html {
   align-items: center;
 }
 
+section{
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
 .loader {
-  width: 100%;
-  height: 100%;
   background-color: violet;
   position: fixed;
-  top: 0;
-  left: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
   opacity: 1;
   transition: opacity 0.5s ease;
-
 }
 
 .loaderFront {
@@ -97,26 +99,14 @@ html {
 .main {
   padding: 0rem;
   margin: 0rem;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: felx;
-  justify-content: center;
-  align-items: center;
   opacity: 0;
   transition: opacity 4s ease;
 }
 /* vh=viewport-heigth   vw=viewport-width*/
 .welcome {
   position: fixed;
-  padding: 0;
-  margin: 0;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
   background-image: radial-gradient(
     circle,
     var(--background-secondary-color),
@@ -150,7 +140,7 @@ html {
 .swipe {
   position: absolute;
   text-align: center;
-  margin-top: 96vh;
+  margin-top: 90vh;
   font-family: "Great Vibes", Fantasy;
   color: var(--font-color);
   font-size: min(6vh, 8vw);
@@ -171,12 +161,9 @@ html {
 }
 
 .queenGreetings {
+  position: relative;
+  top: 100vh;
   background-image: radial-gradient(var(--background-secondary-color), var(--background-color));
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  transform: translateY(100%);
   display: flex;
   justify-content: start;
   flex-wrap: wrap;
@@ -184,6 +171,7 @@ html {
   align-items: center;
   text-align: center;
   z-index: 2;
+  overflow: hidden;
 }
 
 .queenGreetings h1, span {
