@@ -31,7 +31,7 @@ html {
 .loader {
   width: 100%;
   height: 100%;
-  background-color: red;
+  background-color: blue;
   position: fixed;
   top: 0;
   left: 0;
@@ -99,6 +99,9 @@ html {
   margin: 0rem;
   height: 100%;
   width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
   display: felx;
   justify-content: center;
   align-items: center;
@@ -110,6 +113,8 @@ html {
   position: fixed;
   padding: 0;
   margin: 0;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   background-image: radial-gradient(
@@ -122,6 +127,7 @@ html {
   justify-content: center;
   align-items: center;
   opacity: 1;
+  z-index: 1;
 }
 
 .welcome img {
@@ -178,6 +184,7 @@ html {
   align-items: center;
   text-align: center;
   overflow: hidden;
+  z-index: 2;
 }
 
 .queenGreetings h1, span {
@@ -200,8 +207,8 @@ html {
 
 .queenGreetings button{
   position: absolute;
-  width: 5%;
-  height: 5%;
+  width: max(5%, 8rem);
+  height: max(5%, 8rem);
   top: 91%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -219,12 +226,12 @@ html {
 }
 
 .queenGreetings button:hover{
-  width: 7%;
-  height: 7%;
+  width: max(7%, 12rem);
+  height: max(7%, 12rem);
   filter: drop-shadow(5px 5px 5px rgb(62, 51, 29, 0.3));
 }
 
-@media (max-width: 480px) {
+@media (max-width: 700px) {
   .queenGreetings h1 {
     font-size: 20vw;
   }
