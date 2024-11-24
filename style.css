@@ -139,7 +139,7 @@ section{
 .swipe {
   position: absolute;
   text-align: center;
-  margin-top: 90vh;
+  margin-top: 85vh;
   font-family: "Great Vibes", Fantasy;
   color: var(--font-color);
   font-size: min(6vh, 8vw);
