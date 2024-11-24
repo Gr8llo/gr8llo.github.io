@@ -7,8 +7,8 @@ setTimeout(() => document.getElementById("swipe").style.opacity = "1", loading_w
 
 function loader(){
     setTimeout(()=> {
-        document.getElementById("loader").style.opacity = "0";
-        document.getElementById("main").style.opacity = "1";
+        document.getElementById("loader").style.opacity = 0;
+        document.getElementById("main").style.opacity = 1;
         window.scrollTo(0, 0);
     }, loading_wait);
 }
@@ -19,14 +19,18 @@ function overlap(){
 
     document.getElementById("welcome").style.opacity = (1-scrollY/max);
     document.getElementById("queenGreetings").style.opacity = (scrollY/max);
-    const audio = document.getElementById("audio");
+
     if(scrollY>= max - 10){
         document.getElementById("queenGreetings").style.opacity = 1;
-       audio.play();
-    } 
+        audio.play();
+    }
     else{
         audio.pause();
     }
+}
+
+function audioButton(){
+    document.getElementById("speaker").style.opacity = 0;
 }
 
 

@@ -195,6 +195,31 @@ html {
   padding-left: 0.5rem;
 }
 
+.queenGreetings button{
+  position: absolute;
+  width: 5%;
+  height: 5%;
+  top: 91%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: transparent;
+  border-color: transparent;
+  display: flex;
+  align-items: center;
+  opacity: 1;
+  transition: width 1s ease, opacity 1s ease;
+}
+
+.queenGreetings button img{
+  width: 100%;
+  height: auto;
+}
+
+.queenGreetings button:hover{
+  width: 7%;
+  height: 7%;
+  filter: drop-shadow(5px 5px 5px rgb(62, 51, 29, 0.3));
+}
 
 @media (max-width: 480px) {
   .queenGreetings h1 {
@@ -208,5 +233,15 @@ html {
   .queenGreetings sup{
     font-size: 12vw;
     padding-left: 0.5rem;
+  }
+
+  .queenGreetings button{
+    width: 25%;
+    height: auto;
+  }
+
+  .queenGreetings button:hover{
+    width: 33%;
+    height: 33%;
   }
 }
