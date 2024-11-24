@@ -167,6 +167,8 @@ html {
   background-image: radial-gradient(var(--background-secondary-color), var(--background-color));
   width: 100%;
   height: 100%;
+  margin: 0;
+  padding: 0;
   transform: translateY(100%);
   display: flex;
   justify-content: start;
