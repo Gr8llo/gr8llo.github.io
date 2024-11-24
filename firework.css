@@ -36,7 +36,7 @@
     animation: firework 2s infinite;
     position: absolute;
     top: 50%;
-    left: 20%;
+    left: 10%;
     transform: translate(-50%, var(--y));
     width: var(--initialSize);
     aspect-ratio: 1;
@@ -137,10 +137,7 @@
       rotateY(-30deg);
   }
 
-  .firework:nth-child(2) {
-    --x: 30vmin;
-    --y: -50vmin;
-  }
+
 
   .firework:nth-child(2),
   .firework:nth-child(2)::before,
@@ -152,9 +149,13 @@
     --color5: plum;
     --color6: lavender;
     --finalSize: 40vmin;
-    left: 10%;
-    top: 60%;
+    left: 30%;
+    top: 50%;
     animation-delay: -0.45s;
+  }
+
+  .firework:nth-child(2) {
+    --x: 30vmin;
   }
 
   .firework:nth-child(3) {

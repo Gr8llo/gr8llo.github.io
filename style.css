@@ -167,7 +167,7 @@ html {
   background-image: radial-gradient(var(--background-secondary-color), var(--background-color));
   width: 100%;
   height: 100%;
-  margin-top: 100vh;
+  transform: translateY(100%);
   display: flex;
   justify-content: start;
   flex-wrap: wrap;
@@ -175,7 +175,6 @@ html {
   align-items: center;
   text-align: center;
   overflow: hidden;
-  position: relative;
 }
 
 .queenGreetings h1, span {
