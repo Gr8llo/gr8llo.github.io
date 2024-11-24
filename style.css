@@ -31,7 +31,7 @@ html {
 .loader {
   width: 100%;
   height: 100%;
-  background-color: blue;
+  background-color: violet;
   position: fixed;
   top: 0;
   left: 0;
@@ -183,7 +183,6 @@ html {
   flex-direction: row;
   align-items: center;
   text-align: center;
-  overflow: hidden;
   z-index: 2;
 }
 
