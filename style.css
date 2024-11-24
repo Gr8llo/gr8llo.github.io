@@ -36,7 +36,6 @@ section{
 }
 
 .loader {
-  background-color: violet;
   position: fixed;
   display: flex;
   justify-content: center;
