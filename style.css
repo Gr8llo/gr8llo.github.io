@@ -1,0 +1,75 @@
+/* --- CONFIGURAZIONE STILE (Dark Theme) --- */
+:root {
+    --bg-color: #0d1117;       /* Colore sfondo GitHub Dark */
+    --text-color: #c9d1d9;     /* Testo chiaro */
+    --accent-color: #58a6ff;   /* Blu GitHub */
+    --secondary-bg: #161b22;   /* Sfondo sezioni */
+    --border-color: #30363d;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    font-family: 'JetBrains Mono', 'Fira Code', 'Courier New', monospace;
+    line-height: 1.6;
+
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* --- HEADER --- */
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+h1{
+    font-size: 3rem;
+    margin: 0;
+    color: var(--accent-color);
+    text-shadow: 0 0 15px rgba(88, 166, 255, 0.3);
+}
+
+.linux_imagine{
+    position: absolute;
+    bottom: -2rem;
+    right: 0;
+}
+
+.linux_imagine img{
+    height: 15rem;
+    width: auto;
+}
+
+footer{
+    height: 10vh;
+    background-color: var(--secondary-bg);
+    border-top: 1px solid var(--border-color);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+footer a{
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+footer a:hover{
+    color: var(--accent-color);
+}
+
+
